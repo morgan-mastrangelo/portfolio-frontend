@@ -1,0 +1,13 @@
+.skill-section {
+    padding: 8px;
+    background: rgb(26,45,62);
+    overflow: hidden;
+}
+
+.skill-section>h1 {
+    font-family: Arial, serif;
+    font-size: 10vmin;
+    margin: 48px 0 0 0;
+    text-align: center;
+    color: rgba(255,255,255,0.1);
+}

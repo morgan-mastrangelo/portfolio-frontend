@@ -1,0 +1,11 @@
+.experience-section {
+    padding: 32px 32px 56px 32px;
+    background: linear-gradient(to bottom, rgb(26,45,62), #121212);
+}
+
+.experience-section>h1 {
+    font-family: Arial, serif;
+    font-size: 8vmin;
+    margin: 48px 0 32px 32px;
+    color: rgba(255,255,255,0.1);
+}

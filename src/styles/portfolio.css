@@ -1,0 +1,11 @@
+.portfolio-section {
+    padding: 32px 8px 56px 8px;
+}
+
+.portfolio-section>h1 {
+    font-family: Arial, serif;
+    font-size: 8vmin;
+    margin: 48px 32px 20px 0;
+    text-align: right;
+    color: rgba(0,0,0,0.1);
+}

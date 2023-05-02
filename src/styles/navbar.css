@@ -1,0 +1,75 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 96%;
+    height: auto;
+    padding: 0 2%;
+    z-index: 8;
+}
+
+.navbar>div {
+    padding: 20px 12px;
+}
+
+.navbar a {
+    position: relative;
+    padding: 16px 12px;
+    text-decoration: none;
+    animation: text_anim 60s linear infinite;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    transition: all .3s;
+    animation: background_anim 60s linear infinite;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+.navbar-scrolled {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 96%;
+    padding: 0 2%;
+    box-shadow: 0 0 12px rgba(0,0,0,0.3);
+    background: rgba(255,255,255,0.7);
+    backdrop-filter: blur(10px);
+    z-index: 8;
+}
+
+.navbar-scrolled>div {
+    padding: 18px;
+}
+
+.navbar-scrolled a {
+    position: relative;
+    padding: 16px 12px;
+    text-decoration: none;
+    color: rgb(26,45,62);
+}
+
+.navbar-scrolled a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #121212;
+    transition: all .3s;
+}
+
+.navbar-scrolled a:hover::before {
+    width: 100%;
+}

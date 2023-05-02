@@ -1,0 +1,21 @@
+.contact-input {
+    font-size: 16px;
+    width: 100%;
+    max-width: 500px;
+    background: transparent;
+    border-radius: 0;
+    padding: 12px;
+    margin: 12px 0;
+    color: white;
+}
+
+.contact-textarea {
+    font-size: 16px;
+    max-width: 600px;
+    min-height: 300px;
+    background: transparent;
+    border-radius: 0;
+    padding: 12px;
+    margin: 12px 0 24px 0;
+    color: white;
+}

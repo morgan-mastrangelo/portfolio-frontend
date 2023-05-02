@@ -1,0 +1,226 @@
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.slide-day {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+}
+
+.slide-night {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    animation: slide_anim 60s linear infinite;
+}
+
+.slide-title {
+    font-family: "Arial Black", serif;
+    font-size: 4vmin;
+    text-align: center;
+    animation: text_anim 60s linear infinite;
+    z-index: 1;
+}
+
+.slide-title h1 {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 80vw;
+    margin: 0;
+    opacity: 0;
+    animation: title_anim1 .5s forwards;
+}
+
+.slide-title h1 span {
+    margin: 0 1vw;
+}
+
+.slide-title hr {
+    height: 3px;
+    outline: none;
+    border: none;
+    animation: background_anim 60s linear infinite;
+}
+
+.slide-title div {
+    font-family: Arial, serif;
+}
+
+.carousel {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    opacity: 0;
+    animation: title_anim2 .5s .5s forwards;
+}
+
+.carousel div {
+    position: relative;
+    width: 40vmin;
+    height: 50px;
+}
+
+.carousel span {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 0;
+    height: 100%;
+    z-index: -1;
+}
+
+.carousel span:nth-child(1) {
+    animation: carousel_blind_anim 5s ease-out infinite;
+}
+.carousel span:nth-child(2) {
+    animation: carousel_blind_anim 5s .3s ease-out infinite;
+}
+
+.carousel span:nth-child(1) center {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    animation: background_anim_reverse 60s infinite;
+}
+.carousel span:nth-child(2) center {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    animation: background_anim 60s infinite;
+}
+
+.carousel div p {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    opacity: 0;
+}
+
+.carousel div p:nth-child(3) {
+    animation: carousel_text_anim 15s ease-out infinite forwards;
+}
+.carousel div p:nth-child(4) {
+    animation: carousel_text_anim 15s 4.8s ease-out infinite forwards;
+}
+.carousel div p:nth-child(5) {
+    animation: carousel_text_anim 15s 9.8s ease-out infinite forwards;
+}
+
+
+/*  animations */
+
+@keyframes slide_anim {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0
+    }
+    50% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes text_anim {
+    0% {
+        color: rgb(26, 45, 62);
+    }
+    25% {
+        color: rgb(26, 45, 62);
+    }
+    50% {
+        color: white;
+    }
+    75% {
+        color: white;
+    }
+    100% {
+        color: rgb(26, 45, 62);
+    }
+}
+
+@keyframes background_anim {
+    0% {
+        background-color: rgb(26, 45, 62);
+    }
+    25% {
+        background-color: rgb(26, 45, 62);
+    }
+    50% {
+        background-color: white;
+    }
+    75% {
+        background-color: white;
+    }
+    100% {
+        background-color: rgb(26, 45, 62);
+    }
+}
+
+@keyframes background_anim_reverse {
+    0% {
+        background-color: white;
+    }
+    25% {
+        background-color: white;
+    }
+    50% {
+        background-color: rgb(26, 45, 62);
+    }
+    75% {
+        background-color: rgb(26, 45, 62);
+    }
+    100% {
+        background-color: white;
+    }
+}
+
+@keyframes carousel_blind_anim {
+    0%,80% { left: 100%; width: 0 }
+    90% { left: 0; width: 100% }
+    100% { left: 0; width: 0 }
+}
+
+@keyframes carousel_text_anim {
+    3%,30% { opacity: 1 }
+    32%,100% { opacity: 0 }
+}
+
+@keyframes title_anim1 {
+    from { transform: translateY(-50%); opacity: 0 }
+    to { transform: translateY(0); opacity: 1 }
+}
+
+@keyframes title_anim2 {
+    from { transform: translateY(50%); opacity: 0 }
+    to { transform: translateY(0); opacity: 1 }
+}
