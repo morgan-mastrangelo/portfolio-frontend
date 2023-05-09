@@ -19,7 +19,9 @@ function Navbar() {
     <div>
       <Slide duration={500} top when={isScrolled}>
         <div className={'navbar-scrolled'}>
-          <img width={24} src={'logo-light.png'} alt={'logo'} />
+          <a href={'#home'}>
+            <img width={24} src={'logo-light.png'} alt={'logo'} />
+          </a>
           <div>
             <a href={'#home'}>HOME</a>
             <a href={'#about'}>ABOUT</a>
@@ -32,7 +34,9 @@ function Navbar() {
       </Slide>
 
       <div className={'navbar'}>
-        <img width={24} src={'logo-light.png'} alt={'logo'} />
+        <a href={'#home'}>
+          <img width={24} src={'logo-light.png'} alt={'logo'} />
+        </a>
         <div>
           <a href={'#home'}>HOME</a>
           <a href={'#about'}>ABOUT</a>

@@ -9,32 +9,36 @@ import Experience from "./layout/Experience";
 import Contact from "./layout/Contact";
 import Footer from "./layout/Footer";
 import Navbar from "./layout/Navbar";
+import {Provider} from "react-redux";
+import store from "./store";
 
 function App() {
-    const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(true);
 
-    useEffect(() => {
-        window.addEventListener('load', function() {
-            setIsLoading(false);
-        })
+  useEffect(() => {
+    window.addEventListener('load', function () {
+      setIsLoading(false);
     })
+  })
 
-    return isLoading ? <Loader /> : (
-        <div>
-            <DoorEffect/>
+  return isLoading ? <Loader/> : (
+    <Provider store={store}>
+      <div>
+        <DoorEffect/>
 
-            <Navbar />
-            <Header/>
+        <Navbar/>
+        <Header/>
 
-            <About/>
-            <Skills/>
-            <Portfolio/>
-            <Experience />
-            <Contact />
+        <About/>
+        <Skills/>
+        <Portfolio/>
+        <Experience/>
+        <Contact/>
 
-            <Footer />
-        </div>
-    );
+        <Footer/>
+      </div>
+    </Provider>
+  );
 }
 
 export default App;

@@ -29,9 +29,10 @@ function About() {
                             show && (
                                 <Fade delay={700}>
                                     <div className={'about-description'}>
-                                        Thanks for visiting my portfolio website.<br />
-                                        My name is Morgan Mastrangelo, and I am 7+ years experienced developer.<br />
-                                        I love collaborating with teams and I always consider only the best result in my work.
+                                        My name is Morgan Mastrangelo.<br />
+                                        I have a lot of experience and full-stack development, as well as web design with 7+ years.
+                                        Given my diverse experiences in creating impactful web and mobile solutions,
+                                        I am certain that I can add significant value to my team and look forward to bringing my extensive skill set and expertise to my organization.
                                     </div>
                                 </Fade>
                             )

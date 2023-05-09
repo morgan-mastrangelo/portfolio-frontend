@@ -48,6 +48,7 @@ function PortfolioCard(props) {
     left: 0;
     width: 100%;
     height: 100%;
+    text-align: center;
     background: rgb(26, 45, 62);
     color: white;
     backface-visibility: hidden;
@@ -79,6 +80,10 @@ function PortfolioCard(props) {
         cursor: pointer;
         background: rgba(255, 255, 255, 0.3);
       }
+    }
+    
+    & p {
+      padding: 16px;
     }
   `;
 

@@ -1,15 +1,25 @@
 import React, {useState} from 'react';
 import {css} from "@emotion/css";
-import {Col, Input, Row} from "antd";
+import {Col, Input, Modal, Row} from "antd";
 import Button from "../components/Button";
 import '../styles/contact.css';
 import TextArea from "antd/lib/input/TextArea";
-import {SendOutlined} from "@ant-design/icons";
+import {LoadingOutlined, SendOutlined} from "@ant-design/icons";
 import {InView} from "react-intersection-observer";
 import {Bounce, Fade} from "react-reveal";
+import {useDispatch, useSelector} from "react-redux";
+import {sendComment} from "../store/comment.action";
 
 function Contact() {
   const [show, setShow] = useState(false);
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [comment, setComment] = useState('');
+  const [modalOpen, setModalOpen] = useState(false);
+  const [modalText, setModalText] = useState('');
+
+  const dispatch = useDispatch();
+  const { isLoading } = useSelector((state) => state.comment);
 
   const parallax = css`
     min-height: 512px;
@@ -50,7 +60,31 @@ function Contact() {
     height: 100%;
     flex-direction: column;
     justify-content: center;
-  `
+  `;
+
+  const handleSubmit = e => {
+    e.preventDefault();
+
+    const submitData = {
+      name,
+      email,
+      comment
+    }
+
+    setName('');
+    setEmail('');
+    setComment('');
+
+    dispatch(sendComment(submitData))
+      .then(() => {
+        setModalText('Successfully Submitted.');
+        setModalOpen(true);
+      })
+      .catch(() => {
+        setModalText('There caused some Error.');
+        setModalOpen(true);
+      });
+  }
 
   return (
     <InView onChange={inView => setShow(inView)}>
@@ -64,6 +98,14 @@ function Contact() {
             )
           }
         </Col>
+
+        <Modal
+          open={modalOpen}
+          onCancel={()=>setModalOpen(false)}
+          onOk={()=>setModalOpen(false)}
+        >
+          {modalText}
+        </Modal>
 
         <Row style={{minHeight:512}}>
           <Col xs={0} sm={0} md={8} lg={12}>
@@ -80,16 +122,42 @@ function Contact() {
             {
               show && (
                 <Fade delay={300}>
-                  <form className={form}>
-                    <Input name={'name'} placeholder={'Full Name'} rootClassName={'contact-input'}  />
-                    <Input name={'email'} placeholder={'Email'} rootClassName={'contact-input'} />
-                    <TextArea name={'text'} placeholder={'Type here...'} className={'contact-textarea'} />
+                  <form className={form} onSubmit={handleSubmit}>
+                    <Input
+                      name={'name'}
+                      placeholder={'Full Name'}
+                      rootClassName={'contact-input'}
+                      value={name}
+                      required
+                      onChange={({target:{value}}) => setName(value)}
+                    />
+
+                    <Input
+                      name={'email'}
+                      placeholder={'Email'}
+                      rootClassName={'contact-input'}
+                      value={email}
+                      required
+                      onChange={({target:{value}}) => setEmail(value)}
+                    />
+
+                    <TextArea
+                      name={'comment'}
+                      placeholder={'Type here...'}
+                      className={'contact-textarea'}
+                      value={comment}
+                      required
+                      onChange={({target:{value}}) => setComment(value)}
+                    />
 
                     <Button
                       width={'10vw'}
                       height={'60px'}
                     >
-                      <SendOutlined /> SEND
+                      {
+                        isLoading ? <LoadingOutlined /> : <SendOutlined />
+                      }
+                      &nbsp;SEND
                     </Button>
                   </form>
                 </Fade>

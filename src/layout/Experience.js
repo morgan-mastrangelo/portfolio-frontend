@@ -8,6 +8,7 @@ const data = [
   {
     date: '2016 - 2018',
     position: 'Software Programmer',
+    company: 'Boston Consulting Group',
     desc: [
       "Built several desktop applications with C/C++, QML, and mobile applications with Java.",
       "Designed a search feature for an open-source visual programming tool to help users better navigate the system."
@@ -16,6 +17,7 @@ const data = [
   {
     date: '2018 - 2019',
     position: 'Web Designer',
+    company: 'CTI Consulting',
     desc: [
       "Designed Company Logo, Portfolio Blog, etc.",
       "Created high-quality and visually-appealing websites for small and medium-sized businesses according to their specific needs."
@@ -24,6 +26,7 @@ const data = [
   {
     date: '2019 - 2020',
     position: 'Frontend Web Developer',
+    company: 'Uber Technologies',
     desc: [
       "Used Javascript, HTML, and CSS to develop web applications for various industries.",
       "Developed a booking application using React, Next.js, and Node.js to let users book a service online and get real-time updates on their progress.",
@@ -35,6 +38,7 @@ const data = [
   {
     date: '2020 - 2022',
     position: 'Senior Frontend Developer',
+    company: 'Association for Corporate Growth',
     desc: [
       "Taught 7 junior front-end developers and utilized their technical skills to achieve the organization’s objectives.",
       "Developed a web interface using Vue to perform CRUD operations on tasks with large files, driving up the performance of a workflow pipeline by 60%.",
@@ -45,6 +49,7 @@ const data = [
   {
     date: '2023 - Present',
     position: 'Software Engineer',
+    company: 'Pfizer',
     desc: [
       "Collaborated and managed teams in web application development, such as E-commerce, and social websites",
       "Developed and maintained web applications using Django, AngularJS, and MySQL.",
@@ -75,6 +80,7 @@ function Experience() {
               key={index}
               date={exp.date}
               position={exp.position}
+              company={exp.company}
               desc={exp.desc}
             />
           )

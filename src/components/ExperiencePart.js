@@ -4,7 +4,7 @@ import {Col, Row} from "antd";
 import {InView} from "react-intersection-observer";
 
 function ExperiencePart(props) {
-  const {date, position, desc} = props;
+  const {date, position, company, desc} = props;
   const [show, setShow] = useState(false);
 
   const line = css`
@@ -72,10 +72,16 @@ function ExperiencePart(props) {
       font-size: 32px;
       margin: 12px 0;
     }
-
-    & span {
+    
+    & h2 {
       font-size: 16px;
       margin-bottom: 20px;
+    }
+
+    & span {
+      display: inline;
+      font-size: 24px;
+      font-weight: lighter;
     }
 
     & p {
@@ -111,8 +117,8 @@ function ExperiencePart(props) {
           {
             show && (
               <div className={content}>
-                <h1>{position}</h1>
-                <span>{date}</span>
+                <h1>{position} <span>- {company}</span></h1>
+                <h2>{date}</h2>
                 {
                   desc.map((text, index) =>
                     <p key={index}>• {text}</p>

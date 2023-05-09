@@ -8,21 +8,51 @@ import {Bounce, Fade} from 'react-reveal';
 const data = [
   {
     url: 'assets/images/portfolio/1.png',
-    title: 'SatyaDev Urology',
-    desc: 'This is the hospital site.',
-    link: 'https://satyadevurology.vercel.app/'
+    title: 'Portfolio',
+    desc: 'My Portfolio Website',
+    link: 'https://morgan-mastrangelo.github.io/'
   },
   {
     url: 'assets/images/portfolio/2.png',
-    title: 'Altura NFT',
-    desc: 'This is game site.',
-    link: 'https://www.alturanft.com/'
+    title: 'Pfizer',
+    desc: 'Medical Information Website for Pfizer',
+    link: 'https://www.pfizermedicalinformation.com'
   },
   {
     url: 'assets/images/portfolio/3.png',
+    title: 'SatyaDev Urology',
+    desc: 'A Kidney Stone and Laparoscopy Hospital in Patna Satyadev Urology',
+    link: 'https://satyadevurology.vercel.app/'
+  },
+  {
+    url: 'assets/images/portfolio/4.png',
+    title: 'Go Social',
+    desc: 'Discover communities of favourite creators',
+    link: 'https://krrish105.github.io/GoSocial-Landing-Page/'
+  },
+  {
+    url: 'assets/images/portfolio/5.png',
     title: 'GetCollective',
-    desc: 'This is the site.',
+    desc: 'Benefit from the first collaborative workflow management platform',
     link: 'https://www.getcollective.com/en/'
+  },
+  {
+    url: 'assets/images/portfolio/6.png',
+    title: 'Altura NFT',
+    desc: 'Create, update, and transfer NFTs in-game without technical complexity or costly investment',
+    link: 'https://www.alturanft.com/'
+  },
+  {
+    url: 'assets/images/portfolio/7.png',
+    title: 'Easybank',
+    desc: 'Next generation digital banking website',
+    link: 'https://easy-bank-gold.vercel.app/'
+  },
+  {
+    url: 'assets/images/portfolio/8.png',
+    title: 'Arley Bakery',
+    desc: 'Bakery Marketing website',
+    link: 'https://bakeshop-3.vercel.app/'
   }
 ]
 
