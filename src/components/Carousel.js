@@ -8,8 +8,8 @@ function Carousel(props) {
             <div>
                 <span><center></center></span>
                 <span><center></center></span>
-                <p>Software Engineer</p>
-                <p>Fullstack Developer</p>
+                <p>Front End Developer</p>
+                <p>Back End Developer</p>
                 <p>Web Designer</p>
             </div>
         </div>

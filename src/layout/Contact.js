@@ -1,9 +1,8 @@
 import React, {useState} from 'react';
 import {css} from "@emotion/css";
-import {Col, Input, Modal, Row} from "antd";
+import {Col, Modal, Row} from "antd";
 import Button from "../components/Button";
 import '../styles/contact.css';
-import TextArea from "antd/lib/input/TextArea";
 import {LoadingOutlined, SendOutlined} from "@ant-design/icons";
 import {InView} from "react-intersection-observer";
 import {Bounce, Fade} from "react-reveal";
@@ -108,40 +107,40 @@ function Contact() {
         </Modal>
 
         <Row style={{minHeight:512}}>
-          <Col xs={0} sm={0} md={8} lg={12}>
+          <Col xs={0} sm={0} md={12} lg={10}>
             {
               show && (
                 <Bounce>
-                  <h1 className={title1}>Contact Me</h1>
+                  <h1 className={title1}>CONTACT ME</h1>
                 </Bounce>
               )
             }
           </Col>
 
-          <Col xs={24} sm={24} md={16} lg={12}>
+          <Col xs={24} sm={24} md={12} lg={14}>
             {
               show && (
                 <Fade delay={300}>
                   <form className={form} onSubmit={handleSubmit}>
-                    <Input
+                    <input
                       name={'name'}
                       placeholder={'Full Name'}
-                      rootClassName={'contact-input'}
+                      className={'contact-input'}
                       value={name}
                       required
                       onChange={({target:{value}}) => setName(value)}
                     />
 
-                    <Input
+                    <input
                       name={'email'}
                       placeholder={'Email'}
-                      rootClassName={'contact-input'}
+                      className={'contact-input'}
                       value={email}
                       required
                       onChange={({target:{value}}) => setEmail(value)}
                     />
 
-                    <TextArea
+                    <textarea
                       name={'comment'}
                       placeholder={'Type here...'}
                       className={'contact-textarea'}

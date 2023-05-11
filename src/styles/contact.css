@@ -1,21 +1,58 @@
 .contact-input {
     font-size: 16px;
-    width: 100%;
-    max-width: 500px;
-    background: transparent;
+    position: relative;
+    width: 95%;
+    outline: none;
+    border: 2px solid #50afff;
     border-radius: 0;
-    padding: 12px;
+    padding: 16px;
     margin: 12px 0;
+    background: transparent;
     color: white;
+    transition: all .5s;
+}
+
+.contact-input::placeholder {
+    color: silver;
+}
+
+.contact-input:focus {
+    background: rgba(255,255,255,0.25);
+    border: 2px solid #42d392;
+}
+
+.contact-input::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 100px;
+    background-color: red;
+    z-index: 99;
 }
 
 .contact-textarea {
     font-size: 16px;
-    max-width: 600px;
+    position: relative;
+    width: 95%;
     min-height: 300px;
-    background: transparent;
-    border-radius: 0;
-    padding: 12px;
     margin: 12px 0 24px 0;
+    padding: 16px;
+    border: 2px solid #50afff;
+    outline: none;
+    border-radius: 0;
+    background: transparent;
     color: white;
+    transition: all .5s;
+}
+
+.contact-textarea::placeholder {
+    font-family: Arial, serif;
+    color: silver;
+}
+
+.contact-textarea:focus {
+    background: rgba(255,255,255,0.25);
+    border: 2px solid #42d392;
 }

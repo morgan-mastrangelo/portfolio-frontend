@@ -7,7 +7,7 @@ import Image from "../components/Image";
 import {InView} from "react-intersection-observer";
 
 const data = {
-  frontEnd: ['react', 'vue', 'vite', 'angular', 'svelte', 'redux', 'nextjs', 'nuxtjs', 'jquery', 'gatsby', 'wordpress', 'aws', 'regex'],
+  frontEnd: ['react', 'vue', 'vite', 'angular', 'svelte', 'redux', 'nextjs', 'nuxtjs', 'jquery', 'gatsby', 'graphql', 'wordpress', 'aws', 'regex'],
   backEnd: ['nodejs', 'expressjs', 'php', 'laravel', 'ruby', 'django', 'spring', 'flask', 'mysql', 'mongodb', 'postgres', 'sqlite', 'prisma', 'redis'],
   languages: ['c', 'cs', 'cpp', 'html', 'css', 'js', 'ts', 'py', 'java', 'swift', 'matlab', 'rust', 'go', 'kotlin', 'scala', 'perl'],
   design: ['bootstrap', 'materialui', 'sass', 'svg', 'tailwind', 'windicss', 'ae', 'ps', 'unity']

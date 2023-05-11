@@ -7,53 +7,47 @@ import {Fade} from "react-reveal";
 const data = [
   {
     date: '2016 - 2018',
-    position: 'Software Programmer',
-    company: 'Boston Consulting Group',
+    position: 'Freelancer',
+    company: 'Freelancer & Upwork',
     desc: [
-      "Built several desktop applications with C/C++, QML, and mobile applications with Java.",
-      "Designed a search feature for an open-source visual programming tool to help users better navigate the system."
+      "Built several desktop applications with C/C++, QML, and mobile applications using Java.",
+      "Designed a search feature for an open-source visual programming tool to help users better navigate the system.",
+      "Valued on project management expertising front-end development."
     ]
   },
   {
     date: '2018 - 2019',
     position: 'Web Designer',
-    company: 'CTI Consulting',
+    company: 'Boston Consulting Group',
     desc: [
       "Designed Company Logo, Portfolio Blog, etc.",
       "Created high-quality and visually-appealing websites for small and medium-sized businesses according to their specific needs."
     ]
   },
   {
-    date: '2019 - 2020',
+    date: '2019 - 2022',
     position: 'Frontend Web Developer',
     company: 'Uber Technologies',
     desc: [
       "Used Javascript, HTML, and CSS to develop web applications for various industries.",
       "Developed a booking application using React, Next.js, and Node.js to let users book a service online and get real-time updates on their progress.",
-      "Followed a Kanban-style workflow using Trello boards",
+      "Developed a web interface using Vue to perform CRUD operations on tasks with large files, driving up the performance of a workflow pipeline by 60%.",
       "Created a mobile responsive web design for an online store that gets 65% of its traffic from mobiles",
+      "Developed and maintained web applications using Django, AngularJS, and MySQL.",
+      "Followed a Kanban-style workflow using Trello boards",
       'Worked with back-end developers, front-end developers, and full-stack developers to achieve client objectives.'
     ]
   },
   {
-    date: '2020 - 2022',
+    date: '2022 - 2023',
     position: 'Senior Frontend Developer',
-    company: 'Association for Corporate Growth',
-    desc: [
-      "Taught 7 junior front-end developers and utilized their technical skills to achieve the organization’s objectives.",
-      "Developed a web interface using Vue to perform CRUD operations on tasks with large files, driving up the performance of a workflow pipeline by 60%.",
-      "Designed a credit payment system with premium plans and integrated the application with Stripe API using Node.js to accept online payments",
-      "•Converted given wireframes into Vue components and designed a mobile-friendly UI to provide a better user experience across multiple devices"
-    ]
-  },
-  {
-    date: '2023 - Present',
-    position: 'Software Engineer',
     company: 'Pfizer',
     desc: [
-      "Collaborated and managed teams in web application development, such as E-commerce, and social websites",
-      "Developed and maintained web applications using Django, AngularJS, and MySQL.",
-      "Assisted with the deployment process using Docker and AWS services."
+      "Taught 7 junior front-end developers and utilized their technical skills to achieve the organization’s objectives.",
+      "Converted given wireframes into Vue components and designed a mobile-friendly UI to provide a better user experience across multiple devices.",
+      "Collaborated and managed teams in web application development, such as E-commerce, and social websites.",
+      "Improved the home page views from 1.5K to 150K weekly through SEO optimization, A/B testing, and conversion rate optimization.",
+      "Reduced development time by 75% through code reuse in JQuery libraries for various projects with over 5.4K combined page visits."
     ]
   }
 ];
