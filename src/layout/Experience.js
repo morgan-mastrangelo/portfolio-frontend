@@ -6,9 +6,9 @@ import {Fade} from "react-reveal";
 
 const data = [
   {
-    date: '2016 - 2018',
+    date: '2016 - 2017',
     position: 'Freelancer',
-    company: 'Freelancer & Upwork',
+    company: 'Freelancer.com',
     desc: [
       "Built several desktop applications with C/C++, QML, and mobile applications using Java.",
       "Designed a search feature for an open-source visual programming tool to help users better navigate the system.",
@@ -16,7 +16,7 @@ const data = [
     ]
   },
   {
-    date: '2018 - 2019',
+    date: '2017 - 2018',
     position: 'Web Designer',
     company: 'Boston Consulting Group',
     desc: [
@@ -25,17 +25,28 @@ const data = [
     ]
   },
   {
-    date: '2019 - 2022',
+    date: '2018 - 2021',
     position: 'Frontend Web Developer',
     company: 'Uber Technologies',
     desc: [
       "Used Javascript, HTML, and CSS to develop web applications for various industries.",
       "Developed a booking application using React, Next.js, and Node.js to let users book a service online and get real-time updates on their progress.",
       "Developed a web interface using Vue to perform CRUD operations on tasks with large files, driving up the performance of a workflow pipeline by 60%.",
-      "Created a mobile responsive web design for an online store that gets 65% of its traffic from mobiles",
+      "Created a mobile responsive web design for an online store that gets 65% of its traffic from mobiles.",
       "Developed and maintained web applications using Django, AngularJS, and MySQL.",
-      "Followed a Kanban-style workflow using Trello boards",
+      "Followed a Kanban-style workflow using Trello boards.",
       'Worked with back-end developers, front-end developers, and full-stack developers to achieve client objectives.'
+    ]
+  },
+  {
+    date: '2021 - 2022',
+    position: 'Backend Developer',
+    company: 'Adams Consulting Group, LLC',
+    desc: [
+      "Assisted in resolving 85% of client technical issues through debugging and research.",
+      "Built e-commerce backend using Java and Spring framework.",
+      "Specialized in online customer service features, including the live chat functionality.",
+      "Developed and implemented code using .NET and SQL server."
     ]
   },
   {
