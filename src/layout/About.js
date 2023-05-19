@@ -30,8 +30,8 @@ function About() {
                                 <Fade delay={700}>
                                     <div className={'about-description'}>
                                         My name is Morgan Mastrangelo.<br />
-                                        I'm a web developer with 7 years of development experience including Frontend, Backend, and web design.
-                                        Given my diverse experiences in creating impactful web and mobile solutions, I am certain that I can add significant value to my team and look forward to bringing my extensive skill set and expertise to my organization.
+                                        I'm a web developer specializing in front-end development and web design with 7 years of relevant experience.
+                                        I also have an experience in back-end, database management, as well as mobile app development under my belt.
                                     </div>
                                 </Fade>
                             )

@@ -4,21 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f0e8b618-0a98-486f-bff6-07b3b4a55355" name="Changes" comment="* updated resume">
+    <list default="true" id="f0e8b618-0a98-486f-bff6-07b3b4a55355" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/portfolio/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/portfolio/3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/portfolio/4.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/portfolio/4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/portfolio/5.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/portfolio/5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/portfolio/6.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/portfolio/6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/portfolio/7.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/portfolio/7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/portfolio/8.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/portfolio/8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/resume/Morgan_Mastrangelo_Resume.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/resume/Morgan_Mastrangelo_Resume.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/About.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/Experience.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/Experience.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/Footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/Portfolio.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/Portfolio.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/Skills.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/Skills.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/about.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/about.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +87,7 @@
       <workItem from="1683628942878" duration="1674000" />
       <workItem from="1683819564563" duration="7087000" />
       <workItem from="1684158793796" duration="678000" />
-      <workItem from="1684464163495" duration="1753000" />
+      <workItem from="1684464163495" duration="2169000" />
     </task>
     <task id="LOCAL-00001" summary="updated">
       <created>1683629919271</created>
@@ -130,7 +117,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684158810315</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="* updated portfolio">
+      <created>1684467441139</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1684467441139</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,6 +135,7 @@
     <MESSAGE value="here,too" />
     <MESSAGE value="* changed portfolio" />
     <MESSAGE value="* updated resume" />
-    <option name="LAST_COMMIT_MESSAGE" value="* updated resume" />
+    <MESSAGE value="* updated portfolio" />
+    <option name="LAST_COMMIT_MESSAGE" value="* updated portfolio" />
   </component>
 </project>
