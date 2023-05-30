@@ -1,21 +1,20 @@
 import React, {useState} from 'react';
 import {css} from "@emotion/css";
-import {Col, Modal, Row} from "antd";
+import {Col, Row} from "antd";
 import Button from "../components/Button";
-import '../styles/contact.css';
+import Swal from 'sweetalert2';
 import {LoadingOutlined, SendOutlined} from "@ant-design/icons";
 import {InView} from "react-intersection-observer";
 import {Bounce, Fade} from "react-reveal";
 import {useDispatch, useSelector} from "react-redux";
 import {sendComment} from "../store/comment.action";
+import '../styles/contact.css';
 
 function Contact() {
   const [show, setShow] = useState(false);
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [comment, setComment] = useState('');
-  const [modalOpen, setModalOpen] = useState(false);
-  const [modalText, setModalText] = useState('');
 
   const dispatch = useDispatch();
   const { isLoading } = useSelector((state) => state.comment);
@@ -76,12 +75,16 @@ function Contact() {
 
     dispatch(sendComment(submitData))
       .then(() => {
-        setModalText('Successfully Submitted.');
-        setModalOpen(true);
+        Swal.fire({
+          icon: "success",
+          text: "Successfully submitted."
+        })
       })
       .catch(() => {
-        setModalText('There caused some Error.');
-        setModalOpen(true);
+        Swal.fire({
+          icon: "error",
+          text: "There goes some error."
+        })
       });
   }
 
@@ -97,14 +100,6 @@ function Contact() {
             )
           }
         </Col>
-
-        <Modal
-          open={modalOpen}
-          onCancel={()=>setModalOpen(false)}
-          onOk={()=>setModalOpen(false)}
-        >
-          {modalText}
-        </Modal>
 
         <Row style={{minHeight:512}}>
           <Col xs={0} sm={0} md={12} lg={10}>

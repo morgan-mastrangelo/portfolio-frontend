@@ -6,59 +6,62 @@ import {Fade} from "react-reveal";
 
 const data = [
   {
-    date: '2016 - 2017',
+    date: 'Aug 2016 - June 2017',
     position: 'Freelancer',
     company: 'Freelancer.com',
     desc: [
-      "Built several desktop applications with C/C++, QML, and mobile applications using Java.",
-      "Designed a search feature for an open-source visual programming tool to help users better navigate the system.",
-      "Valued on project management expertising front-end development."
+      "Developed a couple of desktop applications using C/C++ and QML, and several kinds of simple mobile apps using Java, and Android.",
+      "Valued on project management expertise in front-end development.",
+      "Developed statically typed routing API for React front-end."
     ]
   },
   {
-    date: '2017 - 2018',
+    date: 'Aug 2017 - Nov 2018',
     position: 'Web Designer',
     company: 'Boston Consulting Group',
     desc: [
-      "Designed Company Logo, Portfolio Blog, etc.",
-      "Created high-quality and visually-appealing websites for small and medium-sized businesses according to their specific needs."
+      "Designed Company Logo, page layout, mobile responsive, etc.",
+      "Used Javascript, HTML, and CSS to build mobile responsive landing pages for various industries.",
+      "Created high-quality and visually-appealing websites for small and medium-sized businesses according to their specific needs.",
+      "Created a mobile responsive web design for an online store that gets 65% of its traffic from mobiles."
     ]
   },
   {
-    date: '2018 - 2021',
+    date: 'Nov 2018 - Feb 2021',
     position: 'Frontend Web Developer',
     company: 'Uber Technologies',
     desc: [
-      "Used Javascript, HTML, and CSS to develop web applications for various industries.",
-      "Developed a booking application using React, Next.js, and Node.js to let users book a service online and get real-time updates on their progress.",
-      "Developed a web interface using Vue to perform CRUD operations on tasks with large files, driving up the performance of a workflow pipeline by 60%.",
-      "Created a mobile responsive web design for an online store that gets 65% of its traffic from mobiles.",
-      "Developed and maintained web applications using Django, AngularJS, and MySQL.",
+      "Developed a booking application using React/Next.js, and Node.js/express to let users book a service online and get real-time updates on their progress.",
+      "Implemented React Hooks to accelerate front-end rebuild by reducing code while maintaining backward compatibility.",
+      "Implemented Redux to manage a large state, leverage predictable state updates through the use of dispatchers and reducers, and avoid unnecessary prop drilling to improve the maintainability and scalability of the front-end codebase.",
+      "Built out PWA(Progressive Web App) for the B2C portal of Consumer eStore.",
+      "Used various testing frameworks including Jest, Mocha, and Cypress to build more stable projects.",
+      "Developed using React Native by leveraging its 'out-of-the-box' compiler to architect a responsive, scalable and cross-platform mobile application.",
       "Followed a Kanban-style workflow using Trello boards.",
-      'Worked with back-end developers, front-end developers, and full-stack developers to achieve client objectives.'
+      "Worked with back-end, front-end, and full-stack developers to achieve client objectives"
     ]
   },
   {
-    date: '2021 - 2022',
+    date: 'Feb 2021 - Aug 2022',
     position: 'Backend Developer',
     company: 'Adams Consulting Group, LLC',
     desc: [
+      "Developed and implemented code using ASP.NET.",
+      "Used Web services like SOAP, and RESTful APIs for transmission of large blocks of XML and JSON.",
       "Assisted in resolving 85% of client technical issues through debugging and research.",
-      "Built e-commerce backend using Java and Spring framework.",
-      "Specialized in online customer service features, including the live chat functionality.",
-      "Developed and implemented code using .NET and SQL server."
+      "Built E-commerce, Social project backend using Java/Spring, Django, and Ruby on Rails.",
+      "Specialized in online customer service features, including the live chat functionality maintaining database management like RDBMS."
     ]
   },
   {
-    date: '2022 - 2023',
+    date: 'Aug 2022 - May 2023',
     position: 'Senior Frontend Developer',
     company: 'Pfizer',
     desc: [
-      "Taught 7 junior front-end developers and utilized their technical skills to achieve the organization’s objectives.",
-      "Converted given wireframes into Vue components and designed a mobile-friendly UI to provide a better user experience across multiple devices.",
-      "Collaborated and managed teams in web application development, such as E-commerce, and social websites.",
-      "Improved the home page views from 1.5K to 150K weekly through SEO optimization, A/B testing, and conversion rate optimization.",
-      "Reduced development time by 75% through code reuse in JQuery libraries for various projects with over 5.4K combined page visits."
+      "Collaborated and managed team members in web app development in the E-commerce and healthcare fields.",
+      "Reduced development time by 75% using Agile methodologies in Jira software for CI/CD pipelines in various healthcare projects.",
+      "Converted given wireframes into Angular components and designed mobile-friendly User interfaces to provide better user experiences across multiple devices.",
+      "Taught 7 junior front-end developers and utilized their technical skills to achieve the organization's objectives."
     ]
   }
 ];

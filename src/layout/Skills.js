@@ -7,10 +7,10 @@ import Image from "../components/Image";
 import {InView} from "react-intersection-observer";
 
 const data = {
-  frontEnd: ['react', 'nextjs', 'vue', 'vite', 'nuxtjs', 'angular', 'svelte', 'redux', 'jquery', 'gatsby', 'graphql', 'wordpress', 'aws', 'regex', 'flutter', 'remix', 'threejs', 'electron', 'webflow'],
-  backEnd: ['nodejs', 'expressjs', 'nestjs', 'laravel', 'ruby', 'django', 'spring', 'flask', 'mysql', 'mongodb', 'postgres', 'sqlite', 'prisma', 'dotnet', 'azure', 'redis', 'apollo'],
-  languages: ['c', 'cs', 'cpp', 'html', 'css', 'js', 'ts', 'py', 'php', 'java', 'swift', 'matlab', 'rust', 'go', 'kotlin', 'scala', 'perl'],
-  design: ['bootstrap', 'materialui', 'sass', 'svg', 'tailwind', 'windicss', 'ae', 'ps', 'figma', 'unity']
+  frontEnd: ['react', 'nextjs', 'vue', 'vite', 'nuxtjs', 'angular', 'svelte', 'redux', 'jquery', 'gatsby', 'graphql', 'wordpress', 'aws', 'regex', 'flutter', 'remix', 'electron'],
+  backEnd: ['nodejs', 'expressjs', 'nestjs', 'laravel', 'django', 'spring', 'flask', 'mysql', 'mongodb', 'postgres', 'sqlite', 'prisma', 'dotnet', 'azure', 'redis', 'apollo'],
+  languages: ['c', 'cs', 'cpp', 'html', 'css', 'js', 'ts', 'py', 'ruby', 'php', 'java', 'swift', 'matlab', 'rust'],
+  design: ['bootstrap', 'materialui', 'sass', 'svg', 'tailwind', 'ps', 'figma']
 }
 
 function Skills() {
