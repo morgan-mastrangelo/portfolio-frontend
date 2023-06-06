@@ -46,11 +46,13 @@ const data = [
     position: 'Backend Developer',
     company: 'Adams Consulting Group, LLC',
     desc: [
-      "Developed and implemented code using ASP.NET.",
-      "Used Web services like SOAP, and RESTful APIs for transmission of large blocks of XML and JSON.",
+      "Experienced in developing complex PL/SQL queries, Procedures, Triggers, Stored Procedures, Packages, and Views in various databases.",
+      "Developed an E-commerce server side using Java, J2EE, Spring, and Oracle.",
       "Assisted in resolving 85% of client technical issues through debugging and research.",
-      "Built E-commerce, Social project backend using Java/Spring, Django, and Ruby on Rails.",
-      "Specialized in online customer service features, including the live chat functionality maintaining database management like RDBMS."
+      "Take part in developing E-commerce platforms using microservices.",
+      "Collaborated with cross-functional teams to define and develop full-stack solutions to meet business requirements for a range of business units, including retail operations, supply chain, and digital marketing.",
+      "Used Azure cloud services to deliver high-quality, scalable solutions that improve customer experience and drive business value."
+
     ]
   },
   {
@@ -61,7 +63,7 @@ const data = [
       "Collaborated and managed team members in web app development in the E-commerce and healthcare fields.",
       "Reduced development time by 75% using Agile methodologies in Jira software for CI/CD pipelines in various healthcare projects.",
       "Converted given wireframes into Angular components and designed mobile-friendly User interfaces to provide better user experiences across multiple devices.",
-      "Taught 7 junior front-end developers and utilized their technical skills to achieve the organization's objectives."
+      "Taught 2 junior front-end developers and utilized their technical skills to achieve the organization's objectives."
     ]
   }
 ];
