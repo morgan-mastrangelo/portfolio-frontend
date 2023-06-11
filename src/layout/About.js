@@ -3,8 +3,8 @@ import {InView} from "react-intersection-observer";
 import {Col, Row} from "antd";
 import '../styles/about.css';
 import { Zoom, Fade, Bounce } from 'react-reveal';
-import Button from "../components/Button";
 import {FolderOpenOutlined} from "@ant-design/icons";
+import Button from '../components/Button';
 
 function About() {
     const [show, setShow] = useState(false);

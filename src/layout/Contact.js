@@ -1,14 +1,55 @@
 import React, {useState} from 'react';
 import {css} from "@emotion/css";
 import {Col, Row} from "antd";
-import Button from "../components/Button";
 import Swal from 'sweetalert2';
 import {LoadingOutlined, SendOutlined} from "@ant-design/icons";
 import {InView} from "react-intersection-observer";
 import {Bounce, Fade} from "react-reveal";
 import {useDispatch, useSelector} from "react-redux";
+import {TextField, createTheme, outlinedInputClasses, Button, useTheme} from '@mui/material';
 import {sendComment} from "../store/comment.action";
 import '../styles/contact.css';
+import { ThemeProvider } from '@emotion/react';
+
+const customTheme = (outerTheme) =>
+  createTheme({
+    palette: {
+      mode: outerTheme.palette.mode,
+    },
+    components: {
+      MuiTextField: {
+        styleOverrides: {
+          root: {
+            '--TextField-brandBorderColor': 'grey',
+            '--TextField-brandBorderHoverColor': 'grey',
+            '--TextField-brandBorderFocusedColor': 'dodgerblue',
+            '& label': {
+              color: 'silver',
+            },
+            '& label.Mui-focused': {
+              color: 'white',
+            },
+          },
+        },
+      },
+      MuiOutlinedInput: {
+        styleOverrides: {
+          notchedOutline: {
+            borderColor: 'var(--TextField-brandBorderColor)',
+          },
+          root: {
+            [`&:hover .${outlinedInputClasses.notchedOutline}`]: {
+              borderColor: 'var(--TextField-brandBorderHoverColor)',
+            },
+            [`&.Mui-focused .${outlinedInputClasses.notchedOutline}`]: {
+              borderColor: 'var(--TextField-brandBorderFocusedColor)',
+            },
+            color: '#DDDDDD'
+          },
+        },
+      }
+    },
+  });
 
 function Contact() {
   const [show, setShow] = useState(false);
@@ -59,6 +100,8 @@ function Contact() {
     flex-direction: column;
     justify-content: center;
   `;
+
+  const outerTheme = useTheme();
 
   const handleSubmit = e => {
     e.preventDefault();
@@ -116,44 +159,51 @@ function Contact() {
             {
               show && (
                 <Fade delay={300}>
-                  <form className={form} onSubmit={handleSubmit}>
-                    <input
-                      name={'name'}
-                      placeholder={'Full Name'}
-                      className={'contact-input'}
-                      value={name}
-                      required
-                      onChange={({target:{value}}) => setName(value)}
-                    />
+                  <ThemeProvider theme={customTheme(outerTheme)}>
+                    <form className={form} onSubmit={handleSubmit}>
+                      <TextField
+                        variant={'outlined'}
+                        name={'name'}
+                        label={'Full Name'}
+                        style={{margin:'12px 0'}}
+                        value={name}
+                        onChange={({target:{value}}) => setName(value)}
+                        required
+                      />
 
-                    <input
-                      name={'email'}
-                      placeholder={'Email'}
-                      className={'contact-input'}
-                      value={email}
-                      required
-                      onChange={({target:{value}}) => setEmail(value)}
-                    />
+                      <TextField
+                        name={'email'}
+                        label={'Email'}
+                        value={email}
+                        style={{margin:'12px 0'}}
+                        onChange={({target:{value}}) => setEmail(value)}
+                        required
+                      />
 
-                    <textarea
-                      name={'comment'}
-                      placeholder={'Type here...'}
-                      className={'contact-textarea'}
-                      value={comment}
-                      required
-                      onChange={({target:{value}}) => setComment(value)}
-                    />
+                      <TextField
+                        variant={'outlined'}
+                        rows={7}
+                        name={'comment'}
+                        label={'Type here...'}
+                        color={'success'}
+                        value={comment}
+                        style={{margin:'12px 0 24px 0'}}
+                        onChange={({target:{value}}) => setComment(value)}
+                        required
+                        multiline
+                      />
 
-                    <Button
-                      width={'10vw'}
-                      height={'60px'}
-                    >
-                      {
-                        isLoading ? <LoadingOutlined /> : <SendOutlined />
-                      }
-                      &nbsp;SEND
-                    </Button>
-                  </form>
+                      <Button
+                        variant='contained'
+                        style={{padding:16,background:'linear-gradient(135deg, rgb(181, 143, 255), rgb(163, 71, 245))',fontSize:20,fontWeight:'bold'}}
+                      >
+                        {
+                          isLoading ? <LoadingOutlined /> : <SendOutlined />
+                        }
+                        &nbsp;SEND
+                      </Button>
+                    </form>
+                  </ThemeProvider>
                 </Fade>
               )
             }

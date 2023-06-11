@@ -32,13 +32,12 @@ const data = [
     company: 'Uber Technologies',
     desc: [
       "Developed a booking application using React/Next.js, and Node.js/express to let users book a service online and get real-time updates on their progress.",
-      "Implemented React Hooks to accelerate front-end rebuild by reducing code while maintaining backward compatibility.",
       "Implemented Redux to manage a large state, leverage predictable state updates through the use of dispatchers and reducers, and avoid unnecessary prop drilling to improve the maintainability and scalability of the front-end codebase.",
       "Built out PWA(Progressive Web App) for the B2C portal of Consumer eStore.",
       "Used various testing frameworks including Jest, Mocha, and Cypress to build more stable projects.",
       "Developed using React Native by leveraging its 'out-of-the-box' compiler to architect a responsive, scalable and cross-platform mobile application.",
-      "Followed a Kanban-style workflow using Trello boards.",
-      "Worked with back-end, front-end, and full-stack developers to achieve client objectives"
+      "Assisted in resolving 85% of client technical issues through debugging and research.",
+      "Take part in developing E-commerce platforms using microservices."
     ]
   },
   {
@@ -48,11 +47,8 @@ const data = [
     desc: [
       "Experienced in developing complex PL/SQL queries, Procedures, Triggers, Stored Procedures, Packages, and Views in various databases.",
       "Developed an E-commerce server side using Java, J2EE, Spring, and Oracle.",
-      "Assisted in resolving 85% of client technical issues through debugging and research.",
-      "Take part in developing E-commerce platforms using microservices.",
       "Collaborated with cross-functional teams to define and develop full-stack solutions to meet business requirements for a range of business units, including retail operations, supply chain, and digital marketing.",
       "Used Azure cloud services to deliver high-quality, scalable solutions that improve customer experience and drive business value."
-
     ]
   },
   {
